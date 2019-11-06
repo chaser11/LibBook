@@ -58,7 +58,9 @@ www  WEB部署目录（或者子目录）
 
 
 ## 配置
-1.安装WEB服务器(推荐Apache2)，把项目放在上面
+1.安装WEB服务器(推荐Apache2)，把项目移动到站点目录上
+
+(apache站点目录默认在www)
 
 2.安装MySQL数据库
 
@@ -134,18 +136,23 @@ www  WEB部署目录（或者子目录）
 修改以下内容:
 
 // 数据库类型
+
 'type'            => 'mysql',
 
 // 服务器地址
+
 'hostname'        => 'your_IPaddress',
 
 // 数据库名
+
 'database'        => 'your_DatabaseName',
 
 // 用户名
+
 'username'        => 'Your_user_name',
 
 // 密码
+
 'password'        => 'Your_Password',
 
 5.配置成功
