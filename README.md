@@ -135,12 +135,16 @@ www  WEB部署目录（或者子目录）
 
 // 数据库类型
 'type'            => 'mysql',
+
 // 服务器地址
 'hostname'        => 'your_IPaddress',
+
 // 数据库名
 'database'        => 'your_DatabaseName',
+
 // 用户名
 'username'        => 'Your_user_name',
+
 // 密码
 'password'        => 'Your_Password',
 
