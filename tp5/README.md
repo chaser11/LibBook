@@ -65,8 +65,7 @@ www  WEB部署目录（或者子目录）
 3.在数据库中分别创建user\seats\orders\admin4张表
 表结构如下：
 
-user:
-
+##user:
 
 | Field    | Type             | Null | Key | Default | Extra          |
 
@@ -79,13 +78,14 @@ user:
 | username | varchar(40)      | NO   |     | NULL    |                |
 
 
-seats:
+##seats:
 
 
 
 | Field   | Type             | Null | Key | Default | Extra          |
 
 +---------+------------------+------+-----+---------+----------------+
+
 | id      | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
 
 | floor   | int(11)          | NO   |     | NULL    |                |
@@ -93,7 +93,7 @@ seats:
 | seat_id | int(11)          | NO   |     | NULL    |                |
 
 
-orders:
+##orders:
 
 
 
@@ -116,9 +116,7 @@ orders:
 | end_time   | time             | NO   |     | NULL    |                |
 
 
-admin:
-
-
+##admin:
 
 | Field    | Type             | Null | Key | Default | Extra          |
 
@@ -155,12 +153,9 @@ admin:
 
 ## 版权信息
 
-ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
 
 本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
 版权所有Copyright © 2008-2019 by LiGaoMing
 
 All rights reserved。
-
-更多thinkPHP5细节参阅 [LICENSE.txt](LICENSE.txt)
