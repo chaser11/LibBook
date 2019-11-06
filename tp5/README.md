@@ -67,71 +67,89 @@ www  WEB部署目录（或者子目录）
 
 user:
 
-+----------+------------------+------+-----+---------+----------------+
 
 | Field    | Type             | Null | Key | Default | Extra          |
 
 +----------+------------------+------+-----+---------+----------------+
 
 | id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
 | usernum  | varchar(40)      | NO   |     | NULL    |                |
+
 | username | varchar(40)      | NO   |     | NULL    |                |
 
-+----------+------------------+------+-----+---------+----------------+
 
 seats:
 
 
-+---------+------------------+------+-----+---------+----------------+
+
 | Field   | Type             | Null | Key | Default | Extra          |
+
 +---------+------------------+------+-----+---------+----------------+
 | id      | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
 | floor   | int(11)          | NO   |     | NULL    |                |
+
 | seat_id | int(11)          | NO   |     | NULL    |                |
-+---------+------------------+------+-----+---------+----------------+
+
 
 orders:
 
 
-+------------+------------------+------+-----+---------+----------------+
+
 | Field      | Type             | Null | Key | Default | Extra          |
+
 +------------+------------------+------+-----+---------+----------------+
+
 | id         | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
 | user_id    | int(10) unsigned | NO   |     | NULL    |                |
+
 | floor      | int(10) unsigned | NO   |     | NULL    |                |
+
 | seat_id    | int(10) unsigned | NO   |     | NULL    |                |
+
 | date       | date             | NO   |     | NULL    |                |
+
 | start_time | time             | NO   |     | NULL    |                |
+
 | end_time   | time             | NO   |     | NULL    |                |
-+------------+------------------+------+-----+---------+----------------+
+
 
 admin:
 
 
-+----------+------------------+------+-----+---------+----------------+
+
 | Field    | Type             | Null | Key | Default | Extra          |
+
 +----------+------------------+------+-----+---------+----------------+
+
 | id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
 | user     | char(20)         | NO   |     | NULL    |                |
+
 | password | char(20)         | NO   |     | NULL    |                |
-+----------+------------------+------+-----+---------+----------------+
+
 
 4.修改数据库配置
 打开tp5/application/database.php
-修改以下内容：
-    // 数据库类型
-    'type'            => 'mysql',
-    // 服务器地址
-    'hostname'        => 'your_IPaddress',
-    // 数据库名
-    'database'        => 'your_DatabaseName',
-    // 用户名
-    'username'        => 'Your_user_name',
-    // 密码
-    'password'        => 'Your_Password',
+修改以下内容:
+
+// 数据库类型
+'type'            => 'mysql',
+// 服务器地址
+'hostname'        => 'your_IPaddress',
+// 数据库名
+'database'        => 'your_DatabaseName',
+// 用户名
+'username'        => 'Your_user_name',
+// 密码
+'password'        => 'Your_Password',
 
 5.配置成功
+
 访问首页URL地址http://YourIPAddress/tp5/public/admin
+
 用户名默认admin，密码默认123456
 
 
