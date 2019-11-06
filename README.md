@@ -67,7 +67,7 @@ www  WEB部署目录（或者子目录）
 3.在数据库中分别创建user\seats\orders\admin4张表
 表结构如下：
 
-##user:
+**user:
 
 | Field    | Type             | Null | Key | Default | Extra          |
 
@@ -80,7 +80,7 @@ www  WEB部署目录（或者子目录）
 | username | varchar(40)      | NO   |     | NULL    |                |
 
 
-##seats:
+**seats:
 
 
 
@@ -95,7 +95,7 @@ www  WEB部署目录（或者子目录）
 | seat_id | int(11)          | NO   |     | NULL    |                |
 
 
-##orders:
+**orders:
 
 
 
@@ -118,7 +118,7 @@ www  WEB部署目录（或者子目录）
 | end_time   | time             | NO   |     | NULL    |                |
 
 
-##admin:
+**admin:
 
 | Field    | Type             | Null | Key | Default | Extra          |
 
@@ -161,6 +161,7 @@ www  WEB部署目录（或者子目录）
 
 用户名默认admin，密码默认123456
 
+![后台页面](LibBook后台展示图.PNG);
 
 ## 版权信息
 
